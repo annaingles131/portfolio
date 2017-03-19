@@ -10,65 +10,136 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <nav class="col-xs-12 navbar-fixed-top">
-        <div class="pull-left">
-          <a href="index.html"><img src="img/logo.png" alt="logo" id="logoheader"></a>
-        </div>
-        <ul class="navlinks pull-right">
-          <a href=""><li>About</li></a>
-          <a href=""><li>Work</li></a>
-          <a href=""><li>Contact</li></a>
+  <!-- Nav bar begins -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+        	<img src="img/logo.png" alt="logo" class="img-responsive" id="logoheader">
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  				<ul class="nav navbar-nav navbar-right">
+  					<li><a href="#">About</a></li>
+  					<li><a href="#">Work</a></li>
+  					<li><a href="#">Contact Me</a></li>
         </ul>
-      </nav>
-    </div>
-    <div class="row">
-      <header class="col-xs-12">
-        <div class="jumbotron cover">
-          <div class="row">
-            <div class="col-xs-4 col-xs-offset-4">
-              <div class="text-center center-block" id="logo">
-                <a href="index.html">
-                  <img src="img/logo.png" alt="logo" class="img-responsive center-block" id="logoimg">
-                  <h1 class="display1">Anna</h1>
-                </a>
-                <p>Web Developer / Designer </p>
-                <button class="btn">Work with me</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
-      <div class="row flexcontainer1">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 blocka">
-          <div class="background">
-            <div class="row">
-              <div class="col-xs-6 col-md-4 aboutblockpic b1">
-              </div>
-              <div class="col-xs-6 col-md-5 aboutblocktext b2">
-                <h1>About:</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptate? Numquam possimus sapiente rerum aliquid, ea quia aperiam distinctio alias error qui dolores veniam. A.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 col-md-4 doblockpic pull-right b1"></div>
-              <div class="col-xs-6 col-md-5 doblocktext pull-right b2">
-                <h1>What I offer:</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptate? Numquam possimus sapiente rerum aliquid, ea quia aperiam distinctio alias error qui dolores veniam. A.</p>
-              </div>
-            </div>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-xs-12 work">
-                </div>
-              </div>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- Navbar ends here  -->
+  </div>
+
+  <!-- Jumbotron starts  -->
+  <div class="row">
+    <header class="col-xs-12">
+      <div class="jumbotron headercover">
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+            <div class="text-center center-block" id="logo">
+              <!-- This is media queried to make reponsive -->
+              <a href="index.html">
+                <img src="img/logo.png" alt="logo" class="img-responsive center-block" id="logoimg">
+                <h1 class="display-1">Anna</h1>
+              </a>
+              <p>Web Developer / Designer </p>
+              <button class="btn">Work with me</button>
             </div>
           </div>
         </div>
       </div>
+    </header>
+  </div>
+  <!-- Jumbotron ends -->
+
+  <!--Floating block section starts -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Background everything is floated ontop of -->
+        <div class="background">
+        </div>
+      </div>
     </div>
+  </div>
+      <!-- About me block starts -->
+      <div class="container about">
+        <div class="row">
+          <div class="col-xs-6 col-md-4 aboutblockpic">
+          </div>
+          <div class="col-xs-6 col-md-5 aboutblocktext">
+            <h1>About:</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptate? Numquam possimus sapiente rerum aliquid, ea quia aperiam distinctio alias error qui dolores veniam. A.</p>
+          </div>
+        </div>
+      </div>
+      <!-- About me block ends -->
+      <!-- What I do block starts -->
+      <div class="container whatido">
+        <div class="row">
+          <div class="col-xs-6 col-sm-4 doblockpic pull-right"></div>
+          <div class="col-xs-6 col-sm-5 doblocktext pull-right">
+            <h1>What I offer:</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptate? Numquam possimus sapiente rerum aliquid, ea quia aperiam distinctio alias error qui dolores veniam. A.</p>
+          </div>
+        </div>
+      </div>
+      <!-- What I do block starts -->
+  <!--  Floating block section ends  -->
+
+  <!-- my work starts -->
+  <div class="container-fluid work">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center">My Work</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 workbox"></div>
+            <div class="col-xs-12 col-sm-3 workbox"></div>
+            <div class="col-xs-12 col-sm-3 workbox"></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 workbox"></div>
+            <div class="col-xs-12 col-sm-3 workbox"></div>
+            <div class="col-xs-12 col-sm-3 workbox"></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 workbox"></div>
+            <div class="col-xs-12 col-sm-3 workbox"></div>
+            <div class="col-xs-12 col-sm-3 workbox"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- My work ends -->
+
+
+    <!-- footer begins  -->
+    <div class="container-fluid">
+      <div class="row footer">
+        <!-- my links -->
+        <div class="col-xs-6" id="socialmedia">
+          <!-- github -->
+          <!-- Instagram -->
+        </div>
+        <!--contact info  -->
+        <div class="col-xs-6" id="contactinfo">
+          <h1 class="text-center">You can reach me:</h1>
+          <!-- Phone icon -->
+          <!-- Main icon -->
+        </div>
+      </div>
+    </div>
+
 
 
 
