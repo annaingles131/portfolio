@@ -2,13 +2,9 @@
 
 /*===========UNIVERSALS============*/
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Josefin Slab', serif;
-
-}
-
-p {
+h1, h2, h3, h4, h5, p {
   font-family: 'Playfair Display', serif;
+
 }
 
 a {
@@ -21,16 +17,13 @@ a:hover {
 }
 
 
-
-
-
 /*=================NAV=============*/
 #logoheader {
   height: 80px;
 }
 
 nav {
-  box-shadow:5px 0px 30px #000;
+  box-shadow:5px 0px 30px #837f7f;
   }
 
 .navbar-default .navbar-collapse {
@@ -53,8 +46,9 @@ nav li:hover {
   background-position: center;
   height: 750px;
   margin: 0px;
-  box-shadow:0px 5px 40px #000;
-
+  box-shadow:0px 5px 30px #837f7f;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -84,10 +78,16 @@ button:hover {
 }
 
 /*============BLOCKS=================*/
+.background-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 .background {
-  height: 2000px;
-  background-color: #837f7f;
-  box-shadow: 0 5px 20px #000;
+  height: 3000px;
+  background-image: url("../img/texture.png");
+  box-shadow: 0 5px 20px #837f7f;
   margin: 0 80px;
   position: relative;
   z-index: 0;
@@ -95,7 +95,9 @@ button:hover {
 
 /*==============ABOUT BLOCK==========*/
 .about {
-  transform: translateY(-1900px);
+  position: absolute;
+  top: 5%;
+  left: -1%;
 }
 
 .aboutblockpic {
@@ -103,21 +105,23 @@ button:hover {
   background-image: url("../img/anna.jpg");
   background-position: center;
   background-size: cover;
-  box-shadow:0px 5px 40px #000;
+  box-shadow:0px 5px 40px #837f7f;
 
 }
 
 .aboutblocktext {
-  min-height: 350px;
+  height: 350px;
   background-color: #fff;
-  box-shadow: 5px 5px 50px #000;
-  overflow: auto;
+  box-shadow: 5px 5px 50px #837f7f;
+  overflow: scroll;
 }
 
 
 /*============WHAT I DO BLOCK=========*/
 .whatido {
-  transform: translateY(-1800px);
+  position: absolute;
+  top: 20%;
+  right: -1%;
 }
 
 .doblockpic {
@@ -125,14 +129,14 @@ button:hover {
   background-image: url("../img/computer.jpg");
   background-position: center;
   background-size: cover;
-  box-shadow:0px 5px 40px #000;
+  box-shadow:0px 5px 40px #837f7f;
 }
 
 .doblocktext {
   height: 350px;
   background-color: #fff;
-  box-shadow: 5px 5px 50px #000;
-  overflow: auto;
+  box-shadow: 5px 5px 50px #837f7f;
+  overflow: scroll;
 }
 
 
@@ -140,24 +144,93 @@ button:hover {
 /*==============WORK============*/
 .work {
   background-color: #EBEBEB;
-  height: 1000px;
-  transform: translateY(-1600px);
-  box-shadow: 5px 5px 50px #000;
+  height: 800px;
+  box-shadow: 5px 5px 50px #837f7f;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
 
+.work-text {
+  margin: 30px;
+  font-size: 50px;
 }
 
 .workbox {
-  border: 2px solid #000;
+  /*border: 1px solid #000;*/
   height: 250px;
-  padding: 20px;
 }
 
+/*============WORK BOXES ROW 1============*/
+.w1 {
+  background-image: url("../img/mt.png");
+  background-size: cover;
+}
+
+.w2{
+  height: 70px;
+  background-image: url("../img/mt logo.png");
+}
+
+.w3 {
+  background-image: url("../img/petstore.png");
+  background-size: cover;
+}
+
+.w5 {
+  background-image: url("../img/Dorie 1.jpg");
+  background-size: cover;
+  height: 430px;
+  margin-top: -180px;
+}
+
+.w6 {
+  background-image: url("../img/rest.png");
+  background-size: cover;
+
+}
+
+.workcontain {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.workcontain:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 
 /*===============FOOTER================*/
-  .footer {
-    background-color: #000;
-    height: 300px;
-  }
+.footer {
+  background-color: #000;
+  height: 300px;
+  position: relative;
+  bottom: 0;
+}
 
 #socialmedia {
   color: #fff;
@@ -171,21 +244,32 @@ button:hover {
 
 
 @media only screen and (max-width: 799px ) {
+
+/*=========HEADER=============*/
   #logo h1 {
     padding: 0;
   }
 
-  .cover {
-    height: 600px;
+  .headercover {
+    height: 700px;
   }
 
   #logoheader {
     height: 60px;
     transform: translateY(-20px);
   }
+/*========FLOAT BOXES========*/
+  .background {
+    margin: 0 20px;
+  }
 
   .workbox {
     height: 100px;
   }
+
+  .work {
+    overflow: scroll;
+  }
+
 
 }

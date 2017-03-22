@@ -28,15 +28,14 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   				<ul class="nav navbar-nav navbar-right">
-  					<li><a href="#">About</a></li>
-  					<li><a href="#">Work</a></li>
+  					<li><a href="#about">About</a></li>
+  					<li><a href="#work">Work</a></li>
   					<li><a href="#">Contact Me</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
   <!-- Navbar ends here  -->
-  </div>
 
   <!-- Jumbotron starts  -->
   <div class="row">
@@ -50,7 +49,7 @@
                 <img src="img/logo.png" alt="logo" class="img-responsive center-block" id="logoimg">
                 <h1 class="display-1">Anna</h1>
               </a>
-              <p>Web Developer / Designer </p>
+              <p>Web Developer</p>
               <button class="btn">Work with me</button>
             </div>
           </div>
@@ -61,78 +60,136 @@
   <!-- Jumbotron ends -->
 
   <!--Floating block section starts -->
-  <div class="container">
+  <div class="container-fluid background-container">
     <div class="row">
       <div class="col-xs-12">
+        <a name="about"></a>
         <!-- Background everything is floated ontop of -->
         <div class="background">
-        </div>
-      </div>
-    </div>
-  </div>
       <!-- About me block starts -->
-      <div class="container about">
-        <div class="row">
-          <div class="col-xs-6 col-md-4 aboutblockpic">
+          <div class="container ">
+            <div class="row about">
+              <div class="col-xs-6 col-md-4 aboutblockpic">
+              </div>
+              <div class="col-xs-6 col-md-5 aboutblocktext">
+                <h1>About:</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptate? Numquam possimus sapiente rerum aliquid, ea quia aperiam distinctio alias error qui dolores veniam. A.</p>
+              </div>
+            </div>
+              <!-- About me block ends -->
+              <!-- What I do block starts -->
+          <!-- <div class="container "> -->
+            <div class="row whatido">
+              <div class="col-xs-6 col-md-4 doblockpic pull-right"></div>
+              <div class="col-xs-6 col-md-5 doblocktext pull-right">
+                <h1>What I offer:</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptate? Numquam possimus sapiente rerum aliquid, ea quia aperiam distinctio alias error qui dolores veniam. A.</p>
+              </div>
+            </div>
           </div>
-          <div class="col-xs-6 col-md-5 aboutblocktext">
-            <h1>About:</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptate? Numquam possimus sapiente rerum aliquid, ea quia aperiam distinctio alias error qui dolores veniam. A.</p>
-          </div>
+          <!-- What I do block ends -->
         </div>
+        <!-- Background block ends -->
       </div>
-      <!-- About me block ends -->
-      <!-- What I do block starts -->
-      <div class="container whatido">
-        <div class="row">
-          <div class="col-xs-6 col-sm-4 doblockpic pull-right"></div>
-          <div class="col-xs-6 col-sm-5 doblocktext pull-right">
-            <h1>What I offer:</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptate? Numquam possimus sapiente rerum aliquid, ea quia aperiam distinctio alias error qui dolores veniam. A.</p>
-          </div>
-        </div>
-      </div>
-      <!-- What I do block starts -->
   <!--  Floating block section ends  -->
 
   <!-- my work starts -->
-  <div class="container-fluid work">
-    <div class="row">
-      <div class="col-xs-12">
-        <h1 class="text-center">My Work</h1>
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-3 workbox"></div>
-            <div class="col-xs-12 col-sm-3 workbox"></div>
-            <div class="col-xs-12 col-sm-3 workbox"></div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-3 workbox"></div>
-            <div class="col-xs-12 col-sm-3 workbox"></div>
-            <div class="col-xs-12 col-sm-3 workbox"></div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-3 workbox"></div>
-            <div class="col-xs-12 col-sm-3 workbox"></div>
-            <div class="col-xs-12 col-sm-3 workbox"></div>
+  <a name="work"></a>
+      <div class="container-fluid work">
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- Work header -->
+            <div class="row">
+              <div class="col-xs-12">
+                <h1 class="text-center work-text">My Work</h1>
+                <h3 class="text-center">Development // Design</h3>
+              </div>
+            </div>
+            <!-- Work header ends -->
+            <!-- Work blocks -->
+            <div class="container">
+              <!-- work row 1 -->
+              <div class="row">
+                <div class="workcontain">
+                  <a href="">
+                    <div class="col-xs-12 col-sm-4 workbox w1">
+                    <div class="overlay">
+                      <h1 class="text-center text">Mermaid Therapy</h1>
+                      <h3 class="text-center text">Web Development</h3>
+                    </div>
+                    </div></a>
+                </div>
+                <div class="workcontain">
+                  <div class="col-xs-12 col-sm-4 workbox w2">
+                    <div class="overlay">
+                      <h1 class="text-center text">Mermaid Therapy Logo</h1>
+                      <h3 class="text-center text">Web Design</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="workcontain">
+                  <div class="col-xs-12 col-sm-4 workbox w3">
+                    <div class="overlay">
+                      <h1 class="text-center text">Pet Store Website</h1>
+                      <h3 class="text-center text">Web Development</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- work row 2 -->
+              <div class="row">
+                <div class="workcontain">
+                  <div class="col-xs-12 col-sm-4 workbox w4"><h1 class="text-center"></h1></div>
+                </div>
+                <div class="workcontain">
+                  <div class="col-xs-12 col-sm-4 workbox w5">
+                    <div class="overlay">
+                      <h1 class="text-center text">Preformance Flyer</h1>
+                      <h3 class="text-center text">Design</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="workcontain">
+                  <div class="col-xs-12 col-sm-4 workbox w6">
+                    <div class="overlay">
+                      <h1 class="text-center text">Restuarant Website</h1>
+                      <h3 class="text-center text">Web Development</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row 2 ends -->
+            </div>
           </div>
         </div>
       </div>
+    <!-- My work ends -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1"></div>
+        </div>
+      </div>
+
+
+
+
     </div>
   </div>
-    <!-- My work ends -->
+  <!-- background container ends -->
+
+
 
 
     <!-- footer begins  -->
     <div class="container-fluid">
       <div class="row footer">
         <!-- my links -->
-        <div class="col-xs-6" id="socialmedia">
+        <div class="col-xs-6" id="contactinfo" >
           <!-- github -->
           <!-- Instagram -->
         </div>
         <!--contact info  -->
-        <div class="col-xs-6" id="contactinfo">
+        <div class="col-xs-6" id="socialmedia">
           <h1 class="text-center">You can reach me:</h1>
           <!-- Phone icon -->
           <!-- Main icon -->
@@ -149,5 +206,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+
+  </script>
 </body>
 </html>
