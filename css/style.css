@@ -1,19 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Playfair+Display');
 
 /*===========UNIVERSALS============*/
 
-h1, h2, h3, h4, h5, p {
-  font-family: 'Playfair Display', serif;
+ h1,h2, h3, h4, h5 {
+   font-family: 'Josefin Sans', sans-serif;
+}
 
+p {
+  font-family: 'Playfair Display', serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.white-text {
+  color: #fff;
 }
 
 a {
   color: #000;
 }
 
-a:hover {
+a:hover, a:focus {
   text-decoration: none;
   color: #000;
+  border-bottom: 1px solid #000;
 }
 
 
@@ -31,7 +43,7 @@ nav {
 }
 
 nav li {
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
 }
 
@@ -65,7 +77,7 @@ nav li:hover {
 
 #logo h1 {
   padding: 40px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #logo button {
@@ -85,7 +97,7 @@ button:hover {
 }
 
 .background {
-  height: 3000px;
+  height: 3500px;
   background-image: url("../img/texture.png");
   box-shadow: 0 5px 20px #837f7f;
   margin: 0 80px;
@@ -97,7 +109,8 @@ button:hover {
 .about {
   position: absolute;
   top: 5%;
-  left: -1%;
+  left: -3%;
+  z-index: 2;
 }
 
 .aboutblockpic {
@@ -105,23 +118,39 @@ button:hover {
   background-image: url("../img/anna.jpg");
   background-position: center;
   background-size: cover;
-  box-shadow:0px 5px 40px #837f7f;
+  box-shadow:0px 5px 40px #000;
 
 }
 
 .aboutblocktext {
   height: 350px;
   background-color: #fff;
-  box-shadow: 5px 5px 50px #837f7f;
+  box-shadow: 5px 5px 50px #000;
   overflow: scroll;
+
 }
 
+.aboutblocktext h1 {
+  border-bottom: 1px solid #000;
+
+}
+
+.backabout{
+  height: 350px;
+  background-color: #6d6759;
+  box-shadow: 5px 5px 50px #000;
+  position: absolute;
+  top: 3%;
+  left: -2%;
+  z-index: 0;
+}
 
 /*============WHAT I DO BLOCK=========*/
 .whatido {
   position: absolute;
   top: 20%;
-  right: -1%;
+  right: -2%;
+  z-index: 2;
 }
 
 .doblockpic {
@@ -129,38 +158,103 @@ button:hover {
   background-image: url("../img/computer.jpg");
   background-position: center;
   background-size: cover;
-  box-shadow:0px 5px 40px #837f7f;
+  box-shadow:0px 5px 40px #000;
 }
 
 .doblocktext {
   height: 350px;
   background-color: #fff;
-  box-shadow: 5px 5px 50px #837f7f;
+  box-shadow: 5px 5px 50px #000;
   overflow: scroll;
+}
+
+.doblocktext h1 {
+  border-bottom: 1px solid #000;
+}
+
+.progress-bar {
+  background-color: #6d6759;
+}
+
+
+.bar-section p {
+  line-height: 15px;
+}
+
+.backwhat {
+  height: 350px;
+  background-color: #D45457;
+  box-shadow: 5px 5px 50px #000;
+  position: absolute;
+  top: 22%;
+  right: -1%;
+  z-index: 1;
 }
 
 
 
 /*==============WORK============*/
 .work {
-  background-color: #EBEBEB;
+  background-color: #7a7a7a;
   height: 800px;
-  box-shadow: 5px 5px 50px #837f7f;
+  box-shadow: 5px 5px 50px #000;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 0;
   right: 0;
   z-index: 2;
 }
 
 .work-text {
-  margin: 30px;
+  margin: 20px;
   font-size: 50px;
+  border-bottom: 1px solid #fff;
 }
 
 .workbox {
   /*border: 1px solid #000;*/
   height: 250px;
+  margin-top: 10px;
+}
+
+.backwork1 {
+  height: 350px;
+  background-color: #D45457;
+  box-shadow: 5px 5px 50px #000;
+  position: absolute;
+  top: 63%;
+  right: 3%;
+  z-index: 1;
+}
+
+.backwork2 {
+  height: 350px;
+  background-color: #6d6759;
+  box-shadow: 5px 5px 50px #000;
+  position: absolute;
+  top: 60%;
+  right: 30%;
+  z-index: 1;
+}
+
+.backwork3 {
+  height: 350px;
+  background-color: #6d6759;
+  box-shadow: 5px 5px 50px #000;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  z-index: 1;
+}
+
+.backwork4 {
+  height: 350px;
+  background-color: #D45457;
+  box-shadow: 5px 5px 50px #000;
+  position: absolute;
+  top: 42%;
+  left: 40%;
+  z-index: 1;
 }
 
 /*============WORK BOXES ROW 1============*/
@@ -224,6 +318,42 @@ button:hover {
   -ms-transform: translate(-50%, -50%);
 }
 
+/*============CONTACT=================*/
+.contact {
+  height: 450px;
+  background-color: #fff;
+  box-shadow: 5px 5px 50px #000;
+  position: absolute;
+  top: 81%;
+  left: 16%;
+  z-index: 2
+}
+
+.contact h1 {
+  border-bottom: 1px solid #000;
+}
+
+.backwork5 {
+  height: 350px;
+  background-color: #D45457;
+  box-shadow: 5px 5px 50px #000;
+  position: absolute;
+  top: 79%;
+  left: 11%;
+  z-index: 1;
+}
+
+.backwork6 {
+  height: 350px;
+  background-color: #6d6759;
+  box-shadow: 5px 5px 50px #000;
+  position: absolute;
+  top: 86%;
+  left: 65%;
+  z-index: 1;
+}
+
+
 /*===============FOOTER================*/
 .footer {
   background-color: #000;
@@ -239,6 +369,7 @@ button:hover {
 #contactinfo {
   color: #fff;
 }
+
 
 /*=============MEDIA QUERIES===========*/
 
@@ -271,5 +402,8 @@ button:hover {
     overflow: scroll;
   }
 
+  .w5 {
+    margin-top: -120px;
+  }
 
 }
