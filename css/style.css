@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Playfair+Display');
 
 /*===========UNIVERSALS============*/
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
- h1,h2, h3, h4, h5 {
+
+ h1, h2, h3, h4, h5 {
    font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -25,8 +33,8 @@ a {
 a:hover, a:focus {
   text-decoration: none;
   color: #000;
-  border-bottom: 1px solid #000;
 }
+
 
 
 /*=================NAV=============*/
@@ -50,6 +58,30 @@ nav li {
 nav li:hover {
   color: #fff;
 }
+
+
+.navblock1 {
+  height: 100px;
+  background-color: #6d6759;
+  box-shadow: 5px 5px 50px #000;
+  position: absolute;
+  top: 4%;
+  left: 20%;
+  z-index: 3;
+}
+
+.navblock2 {
+  height: 100px;
+  background-color: #D45457;
+  box-shadow: 5px 5px 50px #000;
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  z-index: 2;
+}
+
+
+
 /*==============HEADER==============*/
 
 .headercover {
@@ -205,6 +237,8 @@ button:hover {
   z-index: 2;
 }
 
+
+
 .work-text {
   margin: 20px;
   font-size: 50px;
@@ -295,7 +329,7 @@ button:hover {
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.6);
   overflow: hidden;
   width: 100%;
   height:0;
@@ -338,8 +372,8 @@ button:hover {
   background-color: #D45457;
   box-shadow: 5px 5px 50px #000;
   position: absolute;
-  top: 79%;
-  left: 11%;
+  top: 77%;
+  left: 10%;
   z-index: 1;
 }
 
@@ -355,11 +389,12 @@ button:hover {
 
 
 /*===============FOOTER================*/
-.footer {
+footer {
   background-color: #000;
   height: 300px;
-  position: relative;
   bottom: 0;
+  clear: both;
+
 }
 
 #socialmedia {
@@ -381,7 +416,7 @@ button:hover {
     padding: 0;
   }
 
-  .headercover {
+  .headercover {id="work"
     height: 700px;
   }
 
@@ -389,6 +424,7 @@ button:hover {
     height: 60px;
     transform: translateY(-20px);
   }
+
 /*========FLOAT BOXES========*/
   .background {
     margin: 0 20px;
