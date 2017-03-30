@@ -97,12 +97,12 @@ nav li:hover {
   z-index: 1;
 }
 
-
 #logo {
   border: 2px solid #837f7f;
   border-bottom: none;
   margin-top: 190px;
-
+  animation-name: fadein;
+  animation-duration: 4s;
 }
 
 #logoimg {
@@ -425,6 +425,27 @@ footer p:hover, i:hover {
 .text-wrapper {
   padding-top: 20%;
 }
+
+/*=========ANIMATION=============*/
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 25%;
+    }
+
+    50% {
+      opacity: 50%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+
+  }
+
 
 /*=============MEDIA QUERIES===========*/
 
