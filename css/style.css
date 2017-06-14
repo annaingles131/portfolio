@@ -101,7 +101,6 @@ nav li:hover {
   border: 2px solid #837f7f;
   border-bottom: none;
   margin-top: 190px;
-
 }
 
 #logoimg {
@@ -368,6 +367,14 @@ button:hover {
   top: 78%;
   left: 16%;
   z-index: 2
+}
+
+#form-submit {
+  font-family: 'Playfair Display', serif;
+  width: 100%;
+  padding: 20px;
+  margin-top: 10px;
+
 }
 
 .contact h1 {

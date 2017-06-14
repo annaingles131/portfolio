@@ -206,61 +206,63 @@
       </div>
             <!-- Contact form starts -->
 
-      <div class="container">
-        <div class="row" >
-          <div class="col-xs-8 contact smooth-scroll">
-            <h1 class="text-center text-uppercase bold">Contact me:</h1>
-            <div class="form">
-              <form class="form-group">
-                <label for="exampleInputName">NAME:</label>
-                <input type="text" class="form-control" id="input-name" required>
+            <div class="container">
+              <div class="row" >
+                <div class="col-xs-8 contact smooth-scroll">
+                  <h1 class="text-center text-uppercase bold">Contact me:</h1>
+                  <div class="form">
+                    <form class="form-group">
+                      <label for="exampleInputName">NAME:</label>
+                      <input type="text" class="form-control" id="input-name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">E-MAIL:</label>
+                      <input type="email" class="form-control" id="input-email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputSubject">SUBJECT:</label>
+                      <input type="text" class="form-control" id="input-subject" required>
+                    </div>
+                    <label for="exampleInputMessage">MESSAGE:</label>
+                    <!-- name name="entry.882005742"
+                    email name="entry.1221709071"
+                    subject name="entry.1855704239"
+                    message name="entry.1922195151" -->
+                    <input class="form-control" rows="3" id="input-message"></input>
+                    <button id="form-submit" type="submit">SUBMIT</button>
+                    <p id="input-feedback"></p>
+
+                    <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+                  </form>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">E-MAIL:</label>
-                <input type="email" class="form-control" id="input-email" required>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputSubject">SUBJECT:</label>
-                <input type="text" class="form-control" id="input-subject" required>
-              </div>
-              <label for="exampleInputMessage">MESSAGE:</label>
-              <!-- name name="entry.882005742"
-              email name="entry.1221709071"
-              subject name="entry.1855704239"
-              message name="entry.1922195151" -->
-              <input class="form-control" rows="3" id="input-message"></input>
-              <button id="form-submit" type="submit">SUBMIT</button>
-              <p id="input-feedback"></p>
-
-              <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
-            </form>
-          </div>
-        </div>
-      </div>
+            </div>
 
 
 
-      <!-- input type="hidden" name="fbzx" value="708709802694243190" submit -->
+            <!-- input type="hidden" name="fbzx" value="708709802694243190" submit -->
 
 
-<script>
-    $('#input-form').one('submit',function(){
-        var inputName = encodeURIComponent($('#input-name').val());
-        var inputEmail = encodeURIComponent($('#input-email').val());
-        var inputSubject = encodeURIComponent($('#input-subject').val());
-        var inputMessage = encodeURIComponent($('#input-message').val());
-        var q1ID = "entry.882005742";
-        var q2ID = "entry.1221709071";
-        var q3ID = "entry.1855704239";
-        var q4ID = "entry.1922195151"
-        var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSecJNyocdLzlbOIECnT2_q1m87JFnCd6EMYggLY9w5GjsLf6w/formResponse?';
-        var submitRef = '&submit=Submit';
-        var submitURL = (baseURL + q1ID + "=" + inputName + "&" + q2ID + "=" + inputEmail + "&" + q3ID +  "=" + inputSubject + "&" + q4ID + "=" + inputMessage + submitRef);
-        console.log(submitURL);
-        $(this)[0].action=submitURL;
-        $('#input-feedback').text('Thank You!');
-    });
-</script>
+      <script>
+          $('#input-form').one('submit',function(){
+              var inputName = encodeURIComponent($('#input-name').val());
+              var inputEmail = encodeURIComponent($('#input-email').val());
+              var inputSubject = encodeURIComponent($('#input-subject').val());
+              var inputMessage = encodeURIComponent($('#input-message').val());
+              var q1ID = "entry.882005742";
+              var q2ID = "entry.1221709071";
+              var q3ID = "entry.1855704239";
+              var q4ID = "entry.1922195151"
+              var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSecJNyocdLzlbOIECnT2_q1m87JFnCd6EMYggLY9w5GjsLf6w/formResponse?';
+              var submitRef = '&submit=Submit';
+              var submitURL = (baseURL + q1ID + "=" + inputName + "&" + q2ID + "=" + inputEmail + "&" + q3ID +  "=" + inputSubject + "&" + q4ID + "=" + inputMessage + submitRef);
+              console.log(submitURL);
+              $(this)[0].action=submitURL;
+              $('#input-feedback').text('Thank You!');
+          });
+      </script>
+    
+ 
               <!-- Contact form ends -->
       <!-- Background blocks -->
       <div class="backwork1 col-xs-5"></div>
