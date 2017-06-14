@@ -101,8 +101,7 @@ nav li:hover {
   border: 2px solid #837f7f;
   border-bottom: none;
   margin-top: 190px;
-  animation-name: fadein;
-  animation-duration: 4s;
+
 }
 
 #logoimg {
@@ -373,6 +372,13 @@ button:hover {
 
 .contact h1 {
   border-bottom: 1px solid #000;
+}
+
+#form-submit {
+  font-family: 'Playfair Display', serif;
+  padding: 20px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .backwork5 {
