@@ -21,6 +21,7 @@ function thankYou() {
     alert("Thank you for submitting this form, I will get back to you shortly!");
 }
 
+
 // var navToggle = document.querySelector('#navin');
 //
 // navToggle.addEventListener('click', function() {

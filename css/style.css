@@ -382,7 +382,14 @@ button:hover {
 #form-submit {
   font-family: 'Playfair Display', serif;
   padding: 20px;
-  width: 100%;
+  width: 48%;
+  margin-top: 10px;
+}
+
+#form-reset {
+  font-family: 'Playfair Display', serif;
+  padding: 20px;
+  width: 48%;
   margin-top: 10px;
 }
 
