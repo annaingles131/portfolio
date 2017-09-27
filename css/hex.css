@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display');
+
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+}
+
+.body {
+  background-image: url(../img/texture.png);
+}
+/*------HEADER----------*/
+header {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  width: 100%;
+  z-index: 2;
+}
+
+header h1 {
+  border-bottom: 1px solid #000;
+}
+
+/*------HEX----------*/
+.hex-grid {
+  position: relative;
+  width: 70%;
+  margin: 140px auto;
+  padding: 0;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.hex-grid li {
+  list-style-type: none;
+  position: relative;
+  float: left;
+  width: 28%;
+  padding: 0 0 33% 0;
+  transform: rotate(-60deg) skewY(30deg);
+  background-color: #000;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.hex-grid li:nth-child(3n+2) {
+  margin: 0 1%;
+}
+
+.hex-grid li:nth-child(6n+4), .hex-grid li:nth-child(6n+5), .hex-grid li:nth-child(6n+6){
+  margin-top: -6%;
+  margin-bottom: -6%;
+  transform: translateX(50%) rotate(-60deg) skewY(30deg);
+
+}
+
+
+.hex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: skewY(-30deg) rotate(60deg);
+  visibility: visible;
+  overflow: hidden;
+}
+
+
+#hex1 {
+  background-image: url(../img/anna1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#hex2 {
+  background-image: url(../img/SpeechSisters.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+#hex3 {
+  background-image: url(../img/RorRLogo.png);
+  background-position: top;
+  background-size: cover;
+}
+
+
+#hex4 {
+  background-image: url(../img/ArthopSample.png);
+  background-position: center;
+  background-size: 111%;
+}
+
+#hex5 {
+  background-image: url(../img/Dorie1.jpg);
+  background-position: center;
+  background-size: 90%;
+}
+
+
+#hex6 {
+  background-image: url(../img/Flowers-8.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat:no-repeat;
+}
+
+
+#hex7 {
+  background-image: url(../img/SpeechFriends.png);
+  background-position: 50% 33px;
+  background-size: 250%;
+}
+
+
+#hex8 {
+  background-image: url(../img/SEA2.png);
+  background-position: top;
+  background-size: 140%;
+}
+
+
+#hex9 {
+  background-image: url(../img/rebecca.png);
+  background-position: top;
+  background-size: cover;
+}
+
+#hex10 {
+  background-image: url(../img/StationPosters.png);
+  background-position: center;
+  background-size: 105%;
+}
+
+#hex11 {
+  background-image: url(../img/annacoffee.png);
+  background-position: top;
+  background-size: cover;
+}
+
+#hex12 {
+  background-image: url(../img/wow-8.png);
+  background-position: center;
+  background-size: 90%;
+}
+
+#hex13 {
+  background-image: url(../img/SEA1.png);
+  background-position: 28% 900% ;
+  background-size: 150%;
+}
+
+#hex14 {
+  background-image: url(../img/arthop.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+#hex15 {
+  background-image: url(../img/mtlogo.png);
+  background-position: center;
+  background-size: contain;
+
+}
+
+
+#hex1:hover, #hex9:hover{
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#hex2:hover, #hex8:hover, #hex11:hover{
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+#hex3:hover, #hex4:hover, #hex6:hover, #hex5:hover, #hex7:hover, #hex10:hover, #hex14:hover, #hex15:hover {
+  background-position: center;
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+
+#hex13:hover{
+  background-size: 200%;
+  background-position: 20% 1200%;
+}
+
+#hex12:hover{
+  background-size: 250%;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+
+/*------FOOTER----------*/
+footer p {
+  color: #000;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  float: right;
+  margin: 20px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+footer p:hover {
+  background-color: #000;
+  color: #fff;
+}
