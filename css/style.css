@@ -300,12 +300,12 @@ button:hover {
   background-size: cover;
 }
 
-.w2{
-  height: 70px;
-  background-image: url("../img/mt logo.png");
-  margin-top: -50px;
+.w2 {
+  background-image: url("../img/coffee.png");
+  background-size: cover;
 
 }
+
 
 .w3 {
   background-image: url("../img/petstore.png");
@@ -313,25 +313,32 @@ button:hover {
 }
 
 .w4 {
-  background-image: url("../img/bottomlogo.jpg");
+  background-image: url("../img/bfast.png");
   background-size: cover;
-  height: 80px;
-  margin-top: -150px;
-  color: #fff;
 }
 
 .w5 {
-  background-image: url("../img/Dorie 1.jpg");
+  background-image: url("../img/wedding.png");
   background-size: cover;
-  height: 420px;
 }
 
 .w6 {
   background-image: url("../img/rest.png");
   background-size: cover;
-  margin-top: -150px;
 
 }
+
+.w7 {
+  background-image: url("../img/bottomlogo.jpg");
+  background-size: cover;
+  height: 80px;
+  color: #fff;
+}
+
+.seeMore:hover{
+  color: #fff;
+}
+
 
 .workcontain {
   position: relative;
@@ -514,5 +521,6 @@ footer p:hover, i:hover {
   .text-wrapper {
     padding-top: 10%;
   }
+
 
 }
