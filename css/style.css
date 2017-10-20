@@ -40,14 +40,16 @@ a:hover, a:focus {
 /*=================NAV=============*/
 .logoheader {
   height: 80px;
+  transform: translateY(-20px);
 }
 
 nav {
   box-shadow:5px 0px 30px #837f7f;
 }
 
+
 .navbar-default, .navbar-collapse {
-  padding: 30px !important;
+  padding: 20px;
 } 
 
 nav li {
@@ -55,7 +57,7 @@ nav li {
   font-size: 20px;
 }
 
-nav li:hover {
+nav li:hover { 
   color: #fff;
 }
 
