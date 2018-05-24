@@ -232,7 +232,7 @@ button:hover {
 /*==============WORK============*/
 .work {
   background-color: #7a7a7a;
-  height: 800px;
+  height: 710px;
   box-shadow: 5px 5px 50px #000;
   position: absolute;
   top: 44%;
@@ -296,19 +296,19 @@ button:hover {
 
 /*============WORK BOXES ROW 1============*/
 .w1 {
-  background-image: url("../img/mt.png");
+  background-image: url("../img/Eduler.png");
   background-size: cover;
 }
 
 .w2 {
-  background-image: url("../img/coffee.png");
+  background-image: url("../img/ordr.png");
   background-size: cover;
 
 }
 
 
 .w3 {
-  background-image: url("../img/petstore.png");
+  background-image: url("../img/SpeciesHop.png");
   background-size: cover;
 }
 
@@ -323,7 +323,7 @@ button:hover {
 }
 
 .w6 {
-  background-image: url("../img/rest.png");
+  background-image: url("../img/mt.png");
   background-size: cover;
 
 }
@@ -362,13 +362,18 @@ button:hover {
 }
 
 .text {
-  white-space: nowrap;
   color: white;
   position: relative;
-  overflow: hidden;
-  top: 40%;
+  width: 100%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.work-des {
+  width: 100%;
+  overflow-wrap: break-word;
+  padding-top: 10px;
 }
 
 /*============CONTACT=================*/
@@ -510,6 +515,7 @@ footer p:hover, i:hover {
     overflow: scroll;
   }
 
+}
     /*========FOOTER======*/
 
 @media only screen and (max-width: 799px ) {
